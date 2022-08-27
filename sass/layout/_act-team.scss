@@ -1,0 +1,144 @@
+.act-banner,
+.team-banner {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	color: #212121;
+	text-align: center;
+}
+
+.act-banner {
+	margin-bottom: 50px;	
+}
+
+.actions-type {
+	margin-right: 30px;
+	width: 370px;
+	position: relative;
+}
+.actions-type:last-child {
+	margin-right: 0;
+}
+
+.act-cover-text{
+	position: absolute;
+	display: flex;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: rgba(47, 48, 58, 0.8);
+	width: 370px;
+	height: 70px;
+	transform: translateY(-100%);
+	align-items: center;
+	justify-content: center;
+}
+
+.actions,
+.team-list {
+	list-style: none;
+	display: flex;
+	
+}
+
+.act {
+	padding-bottom: 94px;
+}
+
+.team {
+	background: #F5F4FA;
+}
+
+.team-banner {
+	margin-bottom: 50px;
+}
+
+
+.team-job {
+	font-weight: 400;
+	color: #757575;
+}
+
+.team-item {
+	background: #ffffff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	width: 270px;
+	margin: 0px 15px;
+	transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.team-item:hover,
+.team-item:focus {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	cursor: pointer;
+}
+.team-item:first-child{
+	margin-left: 0;
+}
+.team-item:last-child{
+	margin-right: 0;
+}
+.team-name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #212121;
+	padding-top: 30px;
+	margin-bottom: 10px;
+}
+
+.team-job {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #757575;
+	margin-bottom: 16px;
+}
+
+.client-section{
+	padding-bottom: 89px;
+	padding-top: 94px;
+}
+.client{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.client-link{
+	width: 170px;
+	height: 92px;
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+	outline: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client-link:hover,
+.client-link:focus {
+	border-color: var(--accent-color);	
+}
+
+.client-icon{
+	fill: #AFB1B8;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon{
+	fill:var(--accent-color);
+}

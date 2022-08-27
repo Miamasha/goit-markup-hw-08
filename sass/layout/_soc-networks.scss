@@ -1,0 +1,53 @@
+.soc,
+.footer-soc {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding-bottom: 30px;
+}
+.footer-soc {
+padding-bottom: 0;
+}
+.soc-net,
+.footer-soc-net {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	outline: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-net{
+	background-color: #FFFFFF;	
+}
+
+.footer-soc-net {
+	background-color: rgba(255, 255, 255, 0.1);
+	
+}
+
+.soc-icon{	
+	fill: #AFB1B8;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-icon{
+	fill: #ffffff;
+}
+
+.footer-soc-net:hover,
+.footer-soc-net:focus,
+.soc-net:hover,
+.soc-net:focus {
+	background-color:var(--accent-color)
+}
+
+
+.soc-net:hover .soc-icon,
+.soc-net:focus .soc-icon {
+	fill: #ffffff;
+}
