@@ -6,6 +6,12 @@
 	gap: 10px;
 	padding-bottom: 30px;
 }
+@media screen and (max-width: 1199px) {
+	.soc {
+		padding-bottom: 24px;
+	}
+}
+
 .footer-soc {
 padding-bottom: 0;
 }
