@@ -17,7 +17,7 @@
 	</head>
 
 	<body>
-		<header class="header">
+		<!-- <header class="header">
 			<div class="container header-flex">
 				<nav class="header-nav">
 					<a href="./index.html" class="logo">
@@ -48,7 +48,7 @@
 					</li>
 				</ul>
 			</div>
-		</header>
+		</header> -->
 
 		<main class="studio">
 			<section class="studio-hero">
@@ -61,7 +61,8 @@
 						</button>				
 				</div>
 			</section>
-			<section class="advantage section">
+
+			<!-- <section class="advantage section">
 				<div class="container">
 					<h2 class="advantage-banner">Преимущества</h2>
 					<ul class="advantage-list">
@@ -111,39 +112,84 @@
 						</li>
 					</ul>
 				</div>
-			</section>
-			<section class="act">
+			</section> -->
+
+			<!-- <section class="act">
 				<div class="container">
 					<h2 class="act-banner">Чим ми займаємося</h2>
 					<ul class="act-list">
 						<li class="act-item">
-							<img src="./images/box1.jpg" alt="Вечерний офис" width="370" />
+							<img
+							srcset="
+							./images/box1.jpg 1x,
+							./images/box1-2x.jpg 2x
+							"
+							src="./images/box1.jpg" 
+							alt="Вечірній офіс" 
+							width="370" />
 							<p class="act-cover-text">
 								Десктопні додатки
 							</p>
 						</li>
 						<li class="act-item">
-							<img src="./images/box2.jpg" alt="Дневной офис" width="370" />
+							<img
+							srcset="
+							./images/box2.jpg 1x,
+							./images/box2-2x.jpg 2x
+							"
+							src="./images/box2.jpg" 
+							alt="Дневной офис" 
+							width="370" />
 							<p class="act-cover-text">
 								Мобільні додатки
 							</p>
 						</li>
 						<li class="act-item">
-							<img src="./images/box3.jpg" alt="Палитра цветов" width="370" />
+							<img
+							srcset="
+							./images/box3.jpg 1x,
+							./images/box3-2x.jpg 2x
+							"
+							src="./images/box3.jpg" 
+							alt="Палитра цветов" 
+							width="370" />
 							<p class="act-cover-text">
 								Дизайнерські рішення
 							</p>
 						</li>
 					</ul>
 				</div>				
-			</section>
+			</section> -->
 
 			<section class="team section">
 				<div class="container">
 					<h2 class="team-banner">Наша команда</h2>
 					<ul class="team-list">
 						<li class="team-item">
-							<img src="images/face1.jpg" alt="Ігор Дем'яненко" width="270" />
+							<picture>
+								<source 								
+									srcset="
+									./images/face1.jpg 1x,
+									./images/face1-2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<source 
+									srcset="
+									./images/face1-tab.jpg 1x,
+									./images/face1-tab-2x.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source 
+									srcset="
+									./images/face1-mob.jpg 1x,
+									./images/face1-mob-2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+								/>
+								<img src="images/face1.jpg"	alt="Ігор Дем'яненко"/>
+							</picture>							
 							<h3 class="team-name">Ігор Дем'яненко</h3>
 							<p lang="en" class="team-job">Product Designer</p>							
 							<ul class="soc">
@@ -170,7 +216,30 @@
 							</ul>
 						</li>
 						<li class="team-item">
-							<img src="images/face2.jpg" alt="Ольга Рєпіна" width="270" />
+							<picture>
+								<source 								
+									srcset="
+									./images/face2.jpg 1x,
+									./images/face2-2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<source 
+									srcset="
+									./images/face2-tab.jpg 1x,
+									./images/face2-tab-2x.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source 
+									srcset="
+									./images/face2-mob.jpg 1x,
+									./images/face2-mob-2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+								/>
+								<img src="images/face2.jpg" alt="Ольга Рєпіна"/>
+							</picture>							
 							<h3 class="team-name">Ольга Рєпіна</h3>
 							<p lang="en" class="team-job">Frontend Developer</p>
 							<ul class="soc">
@@ -197,7 +266,30 @@
 							</ul>
 						</li>
 						<li class="team-item">
-							<img src="images/face3.jpg" alt="Микола Тарасов" width="270" />
+							<picture>
+								<source 								
+									srcset="
+									./images/face3.jpg 1x,
+									./images/face3-2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<source 
+									srcset="
+									./images/face3-tab.jpg 1x,
+									./images/face3-tab-2x.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source 
+									srcset="
+									./images/face3-mob.jpg 1x,
+									./images/face3-mob-2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+								/>
+								<img src="images/face3.jpg" alt="Микола Тарасов"/>
+							</picture>							
 							<h3 class="team-name">Микола Тарасов</h3>
 							<p lang="en" class="team-job">Marketing</p>
 							<ul class="soc">
@@ -224,7 +316,30 @@
 							</ul>
 						</li>
 						<li class="team-item">
-							<img src="images/face4.jpg" alt="Михайло Єрмаков" width="270" />
+							<picture>
+								<source 								
+									srcset="
+									./images/face4.jpg 1x,
+									./images/face4-2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<source 
+									srcset="
+									./images/face4-tab.jpg 1x,
+									./images/face4-tab-2x.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source 
+									srcset="
+									./images/face4-mob.jpg 1x,
+									./images/face4-mob-2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+								/>
+								<img src="images/face4.jpg" alt="Михайло Єрмаков"/>
+							</picture>							
 							<h3 class="team-name">Михайло Єрмаков</h3>
 							<p lang="en" class="team-job">UI Designer</p>
 							<ul class="soc">
@@ -254,7 +369,7 @@
 				</div>
 			</section>
 
-			<section class="client-section">
+			<!-- <section class="client-section">
 				<div class="container ">
 					<h2 class="client-banner">Постійні клієнти</h2>
 					<ul class="client-list">
@@ -302,12 +417,13 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 		</main>
 
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-flex">
+
 					<div class="footer-left">
 						<div class="footer-logo">
 							<a href="./index.html">
@@ -331,9 +447,9 @@
 							</ul>
 						</address>
 					</div>
+
 					<div class="footer-right">
-						<h3 class="footer-banner">Приєднуйтесь</h3>
-						
+						<h3 class="footer-banner">Приєднуйтесь</h3>						
 						<ul class="footer-soc">
 							<li class="footer-soc-item"><a href="" class="footer-soc-net">
 								<svg class="footer-soc-icon" width="20" height="20">
@@ -357,6 +473,7 @@
 							</a></li>
 						</ul>
 					</div>
+
 					<div class="footer-subscribe">
 						<h3 class="footer-banner">Підпишіться на розсилку</h3>
 						<form action="#" class="subscribe-form">

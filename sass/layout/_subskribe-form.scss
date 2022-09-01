@@ -1,9 +1,10 @@
 .subscribe-form{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .subscribe-input{
 	margin-right: 12px;
-
 	width: 358px;
 	height: 50px;
 	outline: transparent;
@@ -13,7 +14,6 @@
 	background-color: transparent;
 	color: #ffffff;
 	padding-left: 16px;
-
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-input:hover,
