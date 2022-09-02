@@ -17,38 +17,43 @@
 	</head>
 
 	<body>
-		<!-- <header class="header">
+		<header class="header">
 			<div class="container header-flex">
 				<nav class="header-nav">
 					<a href="./index.html" class="logo">
 						<span class="web-blue">Web</span><span class="studio-black">Studio</span>
 					</a>
 					<ul class="header-nav-list">
-						<li class="header-nav-item"><a class="link" href="./index.html">Студія</a></li>
-						<li class="header-nav-item"><a class="link underline" href="./portfolio.html"><span class="current">Портфоліо</span></a></li>
-						<li class="header-nav-item"><a class="link" href="./contacts.html">Контакти</a></li>
+						<li class="header-nav-item"><a class="nav-link" href="./index.html">Студія</a></li>
+						<li class="header-nav-item"><a class="nav-link underline" href="./portfolio.html"><span class="current">Портфоліо</span></a></li>
+						<li class="header-nav-item"><a class="nav-link" href="./contacts.html">Контакти</a></li>
 					</ul>
 				</nav>
-				<ul class="header-contacts">
-					<li class="header-mail">
-						<a class="header-link" href="mailto:info@devstudio.com">
+				<ul class="header-contact-list">
+					<li class="header-mail-item">
+						<a class="contact-link" href="mailto:info@devstudio.com">
 							<svg class="header-icon" width="16" height="12">
 								<use href="./images/icons-studio.svg#icon-envelope"></use>
 							</svg>
-							<p>info@devstudio.com</p>
+							info@devstudio.com
 						</a>						
 					</li>
-					<li class="header-tel">						
-						<a class="header-link" href="tel:+380961111111">
+					<li class="header-tel-item">						
+						<a class="contact-link" href="tel:+380961111111">
 							<svg class="header-icon" width="10" height="16">
 								<use href="./images/icons-studio.svg#icon-smartphone"></use>
 							</svg>
-							<p>+38 096 111 11 11</p>
+							+38 096 111 11 11
 						</a>						
 					</li>
 				</ul>
+				<button type="menu" class="menu-button">
+					<svg class="menu-icon" width="40" height="40">
+						<use href="./images/icons-studio.svg#icon-mobile-menu"></use>
+					</svg>
+				</button>
 			</div>
-		</header> -->
+		</header>
 
 		<main>
 			<section class="portf section">
@@ -67,7 +72,30 @@
 						<li class="portf-proj">
 							<a href="" class="portf-link">
 								<div class="cover-text-wrap">
-									<img src="images/portfolio1.jpg" alt="Веб-сайт Технокряк" width="370"/>
+									<picture>
+										<source 								
+											srcset="
+											./images/portfolio1.jpg 1x,
+											./images/portfolio1-2x.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio1-tab.jpg 1x,
+											./images/portfolio1-tab-2x.jpg 2x
+											"
+											media="(min-width: 768px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio1-mob.jpg 1x,
+											./images/portfolio1-mob-2x.jpg 2x
+											"
+											media="(max-width: 767px)"
+										/>
+										<img src="images/portfolio1.jpg" alt="Веб-сайт Технокряк"/>
+									</picture>									
 									<p class="portf-cover-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -83,7 +111,30 @@
 						<li class="portf-proj">
 							<a href="" class="portf-link">
 								<div class="cover-text-wrap">
-									<img src="images/portfolio2.jpg" alt="Дизайн постера New Orlean vs Golden Star" width="370" />
+									<picture>
+										<source 								
+											srcset="
+											./images/portfolio2.jpg 1x,
+											./images/portfolio2-2x.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio2-tab.jpg 1x,
+											./images/portfolio2-tab-2x.jpg 2x
+											"
+											media="(min-width: 768px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio2-mob.jpg 1x,
+											./images/portfolio2-mob-2x.jpg 2x
+											"
+											media="(max-width: 767px)"
+										/>
+										<img src="images/portfolio2.jpg" alt="Дизайн постера New Orlean vs Golden Star"/>
+									</picture>									
 									<p class="portf-cover-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 									</p>
@@ -97,7 +148,30 @@
 						<li class="portf-proj">
 							<a href="" class="portf-link">
 								<div class="cover-text-wrap">
-									<img src="images/portfolio3.jpg" alt="Приложение ресторана Seafood" width="370" />
+									<picture>
+										<source 								
+											srcset="
+											./images/portfolio3.jpg 1x,
+											./images/portfolio3-2x.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio3-tab.jpg 1x,
+											./images/portfolio3-tab-2x.jpg 2x
+											"
+											media="(min-width: 768px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio3-mob.jpg 1x,
+											./images/portfolio3-mob-2x.jpg 2x
+											"
+											media="(max-width: 767px)"
+										/>
+										<img src="images/portfolio3.jpg" alt="Приложение ресторана Seafood"/>
+									</picture>									
 									<p class="portf-cover-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 									</p>
@@ -111,7 +185,30 @@
 						<li class="portf-proj">
 							<a href="" class="portf-link">
 								<div class="cover-text-wrap">
-									<img src="images/portfolio4.jpg" alt="Маркетинговый проект Prime" width="370" />
+									<picture>
+										<source 								
+											srcset="
+											./images/portfolio4.jpg 1x,
+											./images/portfolio4-2x.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio4-tab.jpg 1x,
+											./images/portfolio4-tab-2x.jpg 2x
+											"
+											media="(min-width: 768px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio4-mob.jpg 1x,
+											./images/portfolio4-mob-2x.jpg 2x
+											"
+											media="(max-width: 767px)"
+										/>
+										<img src="images/portfolio4.jpg" alt="Маркетинговый проект Prime"/>
+									</picture>									
 									<p class="portf-cover-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 									</p>
@@ -125,7 +222,30 @@
 						<li class="portf-proj">
 							<a href="" class="portf-link">
 								<div class="cover-text-wrap">
-									<img src="images/portfolio5.jpg" alt="Приложение проекта Boxes" width="370" />
+									<picture>
+										<source 								
+											srcset="
+											./images/portfolio5.jpg 1x,
+											./images/portfolio5-2x.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio5-tab.jpg 1x,
+											./images/portfolio5-tab-2x.jpg 2x
+											"
+											media="(min-width: 768px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio5-mob.jpg 1x,
+											./images/portfolio5-mob-2x.jpg 2x
+											"
+											media="(max-width: 767px)"
+										/>
+										<img src="images/portfolio5.jpg" alt="Приложение проекта Boxes"/>
+									</picture>									
 									<p class="portf-cover-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 									</p>
@@ -139,7 +259,30 @@
 						<li class="portf-proj">
 							<a href="" class="portf-link">
 								<div class="cover-text-wrap">
-									<img src="images/portfolio6.jpg" alt="Веб-сайт Inspiration has no Borders" width="370" />
+									<picture>
+										<source 								
+											srcset="
+											./images/portfolio6.jpg 1x,
+											./images/portfolio6-2x.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio6-tab.jpg 1x,
+											./images/portfolio6-tab-2x.jpg 2x
+											"
+											media="(min-width: 768px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio6-mob.jpg 1x,
+											./images/portfolio6-mob-2x.jpg 2x
+											"
+											media="(max-width: 767px)"
+										/>
+										<img src="images/portfolio6.jpg" alt="Веб-сайт Inspiration has no Borders"/>
+									</picture>									
 									<p class="portf-cover-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 									</p>
@@ -153,7 +296,30 @@
 						<li class="portf-proj">
 							<a href="" class="portf-link">
 								<div class="cover-text-wrap">
-									<img src="images/portfolio7.jpg" alt="Дизайн издания Limited Edition" width="370" />
+									<picture>
+										<source 								
+											srcset="
+											./images/portfolio7.jpg 1x,
+											./images/portfolio7-2x.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio7-tab.jpg 1x,
+											./images/portfolio7-tab-2x.jpg 2x
+											"
+											media="(min-width: 768px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio7-mob.jpg 1x,
+											./images/portfolio7-mob-2x.jpg 2x
+											"
+											media="(max-width: 767px)"
+										/>
+										<img src="images/portfolio7.jpg" alt="Дизайн издания Limited Edition" width="370" />
+									</picture>									
 									<p class="portf-cover-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 									</p>
@@ -167,7 +333,30 @@
 						<li class="portf-proj">
 							<a href="" class="portf-link">
 								<div class="cover-text-wrap">
-									<img src="images/portfolio8.jpg" alt="Маркетинговый проект LAB" width="370" />
+									<picture>
+										<source 								
+											srcset="
+											./images/portfolio8.jpg 1x,
+											./images/portfolio8-2x.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio8-tab.jpg 1x,
+											./images/portfolio8-tab-2x.jpg 2x
+											"
+											media="(min-width: 768px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio8-mob.jpg 1x,
+											./images/portfolio8-mob-2x.jpg 2x
+											"
+											media="(max-width: 767px)"
+										/>
+										<img src="images/portfolio8.jpg" alt="Маркетинговый проект LAB"/>
+									</picture>									
 									<p class="portf-cover-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 									</p>
@@ -181,7 +370,30 @@
 						<li class="portf-proj">
 							<a href="" class="portf-link">
 								<div class="cover-text-wrap">
-									<img src="images/portfolio9.jpg" alt="Приложение Growing Business" width="370" />
+									<picture>
+										<source 								
+											srcset="
+											./images/portfolio9.jpg 1x,
+											./images/portfolio9-2x.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio9-tab.jpg 1x,
+											./images/portfolio9-tab-2x.jpg 2x
+											"
+											media="(min-width: 768px)"
+										/>
+										<source 
+											srcset="
+											./images/portfolio9-mob.jpg 1x,
+											./images/portfolio9-mob-2x.jpg 2x
+											"
+											media="(max-width: 767px)"
+										/>
+										<img src="images/portfolio9.jpg" alt="Приложение Growing Business"/>
+									</picture>									
 									<p class="portf-cover-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 									</p>
@@ -213,7 +425,7 @@
 										class="map"
 										href="https://goo.gl/maps/Ut4Wyp9AqgRRf6S79"
 										target="_blank"
-										rel="noopener noreferrer nofollow "
+										rel="noopener noreferrer nofollow"
 									>
 										м. Київ, пр-т Лесі Українки, 26
 									</a>

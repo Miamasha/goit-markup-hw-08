@@ -18,7 +18,9 @@
 		rgba(47, 48, 58, 0.4)),	
 		url(../images/hero-desk-img.jpg);
 	}
-	@include retina {
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
 		.studio-hero {
 			background-image: linear-gradient(
 			rgba(47, 48, 58, 0.4),
@@ -37,7 +39,9 @@
 		rgba(47, 48, 58, 0.4)),
 		url(../images/hero-tablet-img.jpg);
 	}
-	@include retina {
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
 		.studio-hero {
 			background-image: linear-gradient(
 			rgba(47, 48, 58, 0.4),
@@ -56,7 +60,9 @@
 		rgba(47, 48, 58, 0.4)),
 		url(../images/hero-mob-img.jpg);
 	}
-	@include retina {
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
 		.studio-hero {
 			background-image: linear-gradient(
 			rgba(47, 48, 58, 0.4),

@@ -15,21 +15,38 @@
 	margin-left: auto;
     margin-right: auto;
 	max-width: 1170px;
+	
+	// for mobile-menu button:
+	justify-content: space-between;
 }
+
 .header-nav{
 	display: flex;
 	align-items: center;
-	
-	
 }
+
 .header-nav-list{
 	display: flex;
 	margin-left: 93px;
-	align-items: center;
+	align-items: center;	
 }
-.header-contacts{
-	display: flex;
+@media screen and (max-width: 1199px) {	
+	.header-nav-list {
+		margin-left: 88px;
+	}
 }
+
+.header-contact-list{
+	display: flex;	
+	margin-left: auto;
+}
+@media screen and (max-width: 1199px){
+	.header-contact-list{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
 
 .web-blue,
 .studio-black,
@@ -53,12 +70,12 @@
 }
 
 .header-nav-item,
-.header-mail,
-.header-tel {
+.header-mail-item,
+.header-tel-item {
 	margin-right: 50px;	
 }
 .header-nav-item:last-child,
-.header-tel {
+.header-tel-item {
 	margin-right: 0;
 }
 .header-nav-item {
@@ -67,6 +84,12 @@
 	align-items: center;
 	gap: 28px;
 }
+@media screen and (max-width: 1199px) {
+	.header-mail-item {
+		margin-right: 0;
+	}
+}
+
 
 .underline{
 position: relative;
@@ -82,7 +105,7 @@ position: relative;
 	bottom: -2px;
 }
 
-.link {
+.nav-link {
 	display: block;
 	font-style: normal;
 	font-weight: 500;
@@ -94,17 +117,12 @@ position: relative;
 	outline: transparent;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.link:hover,
-.link:focus {
+.nav-link:hover,
+.nav-link:focus {
 	color: var(--accent-color);	
 }
 
-.header-contacts {
-	margin-left: auto;
-}
-
-.header-link {
+.contact-link {
 	display: flex;
 	flex-direction: row;
 	align-items:center;
@@ -117,21 +135,46 @@ position: relative;
 	letter-spacing: 0.02em;
 	color: #757575;
 	padding: 31px 0;
-
 	outline: transparent;
-
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover,
-.header-link:focus {
+.contact-link:hover,
+.contact-link:focus {
 	color: var(--accent-color);	
 }
+@media screen and (max-width: 1199px) {
+		.contact-link {
+			padding: 5px 0;
+		}
+	}
 
 .header-icon {	
 	fill: #757575;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover .header-icon,
-.header-link:focus .header-icon{
+.contact-link:hover .header-icon,
+.contact-link:focus .header-icon{
 	fill: var(--accent-color);
 }
+
+@media screen and (max-width: 767px) {
+	.header-nav-list,
+	.header-contact-list{
+		// as visually-hidden
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		border: 0;
+		padding: 0;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		margin: -1px;
+	}
+	.logo {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+}
+
