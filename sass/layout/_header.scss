@@ -58,6 +58,13 @@
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 }
+@media screen and (max-width: 1199px) {
+	.web-blue,
+	.studio-black,
+	.studio-white {
+		font-size: 24px;
+	}
+}
 
 .studio-black {
 	color: #000000;
