@@ -386,6 +386,7 @@ img {
   color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
 }
 
 .menu-nav-link:hover,
@@ -406,6 +407,7 @@ img {
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
 }
 
 .menu-contact-link:hover,
@@ -1337,8 +1339,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .modal {
-    width: 320px;
-    height: 100vh;
+    width: 450px;
+    height: 609px;
   }
 }
 .modal-close {
@@ -1549,18 +1551,6 @@ img {
 .privacy-checkbox {
   border-color: transparent;
   padding: 0;
-}
-
-.check-text-aid-start {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.privacy-checkbox {
   margin-bottom: 30px;
   margin-left: 13px;
 }
@@ -1574,17 +1564,6 @@ img {
           align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .check-text {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
 .check-text,
 .conditions {
   font-style: normal;
@@ -1601,6 +1580,12 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .check-text,
+.conditions {
+    font-size: 12px;
+  }
+}
 .check-text span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1676,13 +1661,6 @@ img {
   gap: 30px;
 }
 
-@media screen and (min-width: 1200px) {
-  .portf-proj-list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
 .portf-proj {
   background: #ffffff;
   width: 100%;
@@ -1690,12 +1668,12 @@ img {
 
 @media screen and (min-width: 1200px) {
   .portf-proj {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (max-width: 1199px) {
   .portf-proj {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (max-width: 767px) {

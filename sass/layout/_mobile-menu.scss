@@ -28,19 +28,17 @@
     fill: var(--accent-color);
 }
 
-
-
 // .menu-container{
 //     width: 480px;
 // }
 // .mobile-menu-close{
+    // no native close-button, compleete properties borrowed from .modal
 // }
 .no-scroll{
 	overflow: hidden;
 }
 
 //ANIMATION START//
-
 .mobile-menu{     //as .backdrop//
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
 	            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); //plavne vixid/xovannja vid .is-hidden, ne otnositsa k animazii//
@@ -65,10 +63,7 @@
 .mobile-menu.is-hidden .menu-container {
     transform: scale(0); //kolu na .mobile-menu e .is-hidden, to: po4atkovii stan animazii//
     }
-
 //ANIMATION END//
-
-
 
 .menu-nav-item{
     margin-bottom: 32px;
@@ -80,7 +75,8 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: #212121;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    outline: transparent;   
 }
 .menu-nav-link:hover,
 .menu-nav-link:focus {
@@ -100,14 +96,13 @@
     color: #757575;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
 }
 .menu-contact-link:hover,
 .menu-contact-link:focus {
     font-size: 34px;
     color: var(--accent-color);
 }
-
-
 
 .menu-soc-list {
     display: flex;
