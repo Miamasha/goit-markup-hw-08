@@ -31,6 +31,9 @@
 		// max-width: 354px;
 		width: calc((100% - 60px)/2);
 	}
+	.portf-proj:last-child {
+		align-self: flex-start;
+	}
 }
 @media screen and (max-width: 767px) {
 	.portf-proj {

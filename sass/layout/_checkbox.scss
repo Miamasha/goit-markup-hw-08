@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+.check-text-aid-start{
+	display: flex;
+	align-items: center;
+}
 .privacy-checkbox{
 	margin-bottom: 30px;
 	margin-left: 13px;
@@ -10,6 +14,12 @@
 .check-text {
 	display: flex;
 	align-items: center;
+}
+@media screen and (max-width: 767px){
+	.check-text{
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 .check-text,
 .conditions {	
