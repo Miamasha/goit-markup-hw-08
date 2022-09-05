@@ -10,9 +10,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	justify-content: center;
+	// justify-content: center;
 	// margin-top: -15px;
 	// margin-bottom: -15px;
+}
+@media screen and (min-width: 1200px) {
+	.portf-proj-list{
+		justify-content: center;
+	}
 }
 
 .portf-proj {
@@ -31,9 +36,9 @@
 		// max-width: 354px;
 		width: calc((100% - 60px)/2);
 	}
-	.portf-proj:last-child {
-		align-self: flex-start;
-	}
+	// .portf-proj:last-child {
+	// 	align-self: flex-start;
+	// }
 }
 @media screen and (max-width: 767px) {
 	.portf-proj {

@@ -39,11 +39,14 @@
 	overflow: hidden;
 }
 
-.mobile-menu.is-hidden .menu-container {
-    transform: translate(-50%, -50%) scale(1) rotate(0);
-    }
+//ANIMATION START//
 
-.mobile-menu{
+.mobile-menu{     //as .backdrop//
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); //plavne vixid/xovannja vid .is-hidden, ne otnositsa k animazii//
+}
+
+.menu-container{   //as .modal//
     background-color: #ffffff;
     padding: 48px 40px;
     position: fixed;
@@ -55,11 +58,17 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-	// 			visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1); //kinzevij stan animazii//
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); //plavnij scale, vidnositsa k animazii//
 }
+
+.mobile-menu.is-hidden .menu-container {
+    transform: scale(0); //kolu na .mobile-menu e .is-hidden, to: po4atkovii stan animazii//
+    }
+
+//ANIMATION END//
+
+
 
 .menu-nav-item{
     margin-bottom: 32px;

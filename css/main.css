@@ -336,12 +336,12 @@ img {
   overflow: hidden;
 }
 
-.mobile-menu.is-hidden .menu-container {
-  -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
-          transform: translate(-50%, -50%) scale(1) rotate(0);
+.mobile-menu {
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu {
+.menu-container {
   background-color: #ffffff;
   padding: 48px 40px;
   position: fixed;
@@ -360,12 +360,17 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: auto;
-  -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
-          transform: translate(-50%, -50%) scale(1) rotate(0);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-hidden .menu-container {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .menu-nav-item {
@@ -1313,7 +1318,8 @@ img {
 
 .modal {
   width: 528px;
-  height: 581px;
+  min-height: 581px;
+  padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1321,19 +1327,18 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
-          transform: translate(-50%, -50%) scale(1) rotate(0);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 40px;
 }
 
 @media screen and (max-width: 767px) {
   .modal {
     width: 320px;
-    height: 690px;
+    height: 100vh;
   }
 }
 .modal-close {
@@ -1669,11 +1674,15 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .portf-proj-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .portf-proj {
   background: #ffffff;
   width: 100%;
@@ -1687,10 +1696,6 @@ img {
 @media screen and (max-width: 1199px) {
   .portf-proj {
     width: calc((100% - 60px) / 2);
-  }
-  .portf-proj:last-child {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
   }
 }
 @media screen and (max-width: 767px) {
